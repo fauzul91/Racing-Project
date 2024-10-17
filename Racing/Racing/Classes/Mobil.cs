@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +11,7 @@ namespace Racing.Classes
     {
         public int LapCompleted { get; set; } = 0;
         public bool IsFinished { get; set; } = false;
-        public double DistanceCovered { get; set; } = 0; // Jarak yang sudah ditempuh dalam kilometer
+        public double DistanceCovered { get; set; } = 0;
 
         public override void Drive()
         {
@@ -42,7 +43,7 @@ namespace Racing.Classes
         public void CompleteLap(double trackLength)
         {
             LapCompleted++;
-            DistanceCovered = 0; // Reset distance covered when lap is completed
+            DistanceCovered = 0;
             Console.WriteLine($"{merk} completed lap {LapCompleted}");
             if (LapCompleted >= 2)
             {
@@ -51,11 +52,11 @@ namespace Racing.Classes
             }
         }
 
-        // Update jarak yang ditempuh berdasarkan kecepatan
         public void UpdateDistance(double time)
         {
-            DistanceCovered += kecepatan * time / 60; // kecepatan dalam km/h, time dalam menit
+            DistanceCovered += kecepatan * time / 60;
             Console.WriteLine($"{merk} has covered {DistanceCovered:F2} km.");
         }
     }
 }
+

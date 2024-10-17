@@ -49,6 +49,6 @@ namespace Racing.Classes
             }
         }
 
-        public abstract void Drive();   
+        public abstract void Drive();
     }
 }

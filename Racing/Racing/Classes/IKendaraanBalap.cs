@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Racing.Classes
 {
-    public class IKendaraanBalap
+    public interface IKendaraanBalap
     {
         public interface _IKendaraanBalap
         {
@@ -17,3 +17,4 @@ namespace Racing.Classes
         }
     }
 }
+

@@ -26,7 +26,6 @@ namespace Racing.Classes
                 }
             }
         }
-
         public double TrackDifficulty
         {
             get { return trackDifficulty; }
